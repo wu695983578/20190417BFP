@@ -1,0 +1,13 @@
+D:\UnityProgect\ET20190307\ET-master\Bin\libkcp.dylib
+D:\UnityProgect\ET20190307\ET-master\Bin\libkcp.so
+D:\UnityProgect\ET20190307\ET-master\Bin\kcp.dll
+D:\UnityProgect\ET20190307\ET-master\Bin\Model.deps.json
+D:\UnityProgect\ET20190307\ET-master\Bin\Model.dll
+D:\UnityProgect\ET20190307\ET-master\Bin\Model.pdb
+D:\UnityProgect\ET20190307\ET-master\Server\Model\obj\Debug\Server.Model.csprojAssemblyReference.cache
+D:\UnityProgect\ET20190307\ET-master\Server\Model\obj\Debug\Server.Model.csproj.CoreCompileInputs.cache
+D:\UnityProgect\ET20190307\ET-master\Server\Model\obj\Debug\Server.Model.AssemblyInfoInputs.cache
+D:\UnityProgect\ET20190307\ET-master\Server\Model\obj\Debug\Server.Model.AssemblyInfo.cs
+D:\UnityProgect\ET20190307\ET-master\Server\Model\obj\Debug\Server.Model.csproj.CopyComplete
+D:\UnityProgect\ET20190307\ET-master\Server\Model\obj\Debug\Model.dll
+D:\UnityProgect\ET20190307\ET-master\Server\Model\obj\Debug\Model.pdb

@@ -1,0 +1,12 @@
+D:\UnityProgect\ET20190307\ET-master\Bin\netcoreapp2.1\MongoDB.Driver.deps.json
+D:\UnityProgect\ET20190307\ET-master\Bin\netcoreapp2.1\MongoDB.Driver.dll
+D:\UnityProgect\ET20190307\ET-master\Bin\netcoreapp2.1\MongoDB.Driver.pdb
+D:\UnityProgect\ET20190307\ET-master\Bin\netcoreapp2.1\MongoDB.Driver.xml
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\MongoDBDriver\MongoDB.Driver\obj\Debug\netcoreapp2.1\MongoDB.Driver.csprojAssemblyReference.cache
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\MongoDBDriver\MongoDB.Driver\obj\Debug\netcoreapp2.1\MongoDB.Driver.csproj.CoreCompileInputs.cache
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\MongoDBDriver\MongoDB.Driver\obj\Debug\netcoreapp2.1\MongoDB.Driver.AssemblyInfoInputs.cache
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\MongoDBDriver\MongoDB.Driver\obj\Debug\netcoreapp2.1\MongoDB.Driver.AssemblyInfo.cs
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\MongoDBDriver\MongoDB.Driver\obj\Debug\netcoreapp2.1\MongoDB.Driver.csproj.CopyComplete
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\MongoDBDriver\MongoDB.Driver\obj\Debug\netcoreapp2.1\MongoDB.Driver.dll
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\MongoDBDriver\MongoDB.Driver\obj\Debug\netcoreapp2.1\MongoDB.Driver.xml
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\MongoDBDriver\MongoDB.Driver\obj\Debug\netcoreapp2.1\MongoDB.Driver.pdb

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: ConnectionManager.xml-->
+<behavior name="ConnectionManager" agenttype="ETHotfix::ConnectionManager" version="5">
+  <node class="Sequence" id="0">
+    <node class="Action" id="1">
+      <property Method="Self.ETHotfix::ConnectionManager::HeartTick()" />
+      <property ResultOption="BT_SUCCESS" />
+    </node>
+    <node class="IfElse" id="2">
+      <node class="Or" id="4">
+        <node class="Condition" id="5">
+          <property Operator="Equal" />
+          <property Opl="ETHotfix::ConnectionStatus Self.ETHotfix::ConnectionManager::ConnectionStatus" />
+          <property Opr="const ETHotfix::ConnectionStatus None" />
+        </node>
+        <node class="Condition" id="6">
+          <property Operator="Equal" />
+          <property Opl="ETHotfix::ConnectionStatus Self.ETHotfix::ConnectionManager::ConnectionStatus" />
+          <property Opr="const ETHotfix::ConnectionStatus Outline" />
+        </node>
+      </node>
+      <node class="IfElse" id="8">
+        <node class="Condition" id="9">
+          <property Operator="LessEqual" />
+          <property Opl="int Self.ETHotfix::ConnectionManager::ReConnectionTimes" />
+          <property Opr="const int 3" />
+        </node>
+        <node class="Action" id="10">
+          <property Method="Self.ETHotfix::ConnectionManager::Reconnection()" />
+          <property ResultOption="BT_SUCCESS" />
+        </node>
+        <node class="Action" id="11">
+          <property Method="Self.ETHotfix::ConnectionManager::ReturnLogin()" />
+          <property ResultOption="BT_SUCCESS" />
+        </node>
+      </node>
+      <node class="Sequence" id="7">
+        <node class="Assignment" id="12">
+          <property CastRight="false" />
+          <property Opl="int Self.ETHotfix::ConnectionManager::ReConnectionTimes" />
+          <property Opr="const int 0" />
+        </node>
+        <node class="Action" id="13">
+          <property Method="Self.ETHotfix::ConnectionManager::ShowStatus()" />
+          <property ResultOption="BT_SUCCESS" />
+        </node>
+      </node>
+    </node>
+    <node class="Wait" id="3">
+      <property Time="const int 10000" />
+    </node>
+  </node>
+</behavior>

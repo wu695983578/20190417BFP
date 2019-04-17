@@ -1,0 +1,11 @@
+D:\UnityProgect\ET20190307\ET-master\Bin\libkcp.dylib
+D:\UnityProgect\ET20190307\ET-master\Bin\libkcp.so
+D:\UnityProgect\ET20190307\ET-master\Bin\kcp.dll
+D:\UnityProgect\ET20190307\ET-master\Bin\KcpLib.deps.json
+D:\UnityProgect\ET20190307\ET-master\Bin\KcpLib.dll
+D:\UnityProgect\ET20190307\ET-master\Bin\KcpLib.pdb
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\KcpLib\obj\Debug\KcpLib.csproj.CoreCompileInputs.cache
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\KcpLib\obj\Debug\KcpLib.AssemblyInfoInputs.cache
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\KcpLib\obj\Debug\KcpLib.AssemblyInfo.cs
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\KcpLib\obj\Debug\KcpLib.dll
+D:\UnityProgect\ET20190307\ET-master\Server\ThirdParty\KcpLib\obj\Debug\KcpLib.pdb

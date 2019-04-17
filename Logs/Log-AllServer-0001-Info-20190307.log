@@ -1,0 +1,23 @@
+2019-03-07 13:50:56.7056 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2019-03-07 13:51:45.3229 AllServer 0001 (LocationComponent.cs:62) location add key: 383182779252801 instanceId: 383182779252802
+2019-03-07 13:51:46.1693 AllServer 0001 (LocationComponent.cs:169) location get key: 383182779252801 383182779252802
+2019-03-07 13:53:06.2274 AllServer 0001 (LocationComponent.cs:169) location get key: 383182779252801 383182779252802
+2019-03-07 13:58:00.2720 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2019-03-07 14:03:20.4500 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2019-03-07 14:03:44.0096 AllServer 0001 (LocationComponent.cs:62) location add key: 383182826373178 instanceId: 383182826373179
+2019-03-07 14:03:44.6655 AllServer 0001 (LocationComponent.cs:169) location get key: 383182826373178 383182826373179
+2019-03-07 14:08:34.3784 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2019-03-07 14:16:39.4972 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2019-03-07 14:16:48.9062 AllServer 0001 (LocationComponent.cs:62) location add key: 383182877753397 instanceId: 383182877753398
+2019-03-07 14:16:49.9613 AllServer 0001 (LocationComponent.cs:169) location get key: 383182877753397 383182877753398
+2019-03-07 14:25:47.6392 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2019-03-07 14:26:08.9381 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2019-03-07 14:26:54.0291 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2019-03-07 14:27:07.4955 AllServer 0001 (LocationComponent.cs:62) location add key: 383182918320183 instanceId: 383182918320184
+2019-03-07 14:27:10.1652 AllServer 0001 (LocationComponent.cs:169) location get key: 383182918320183 383182918320184
+2019-03-07 14:28:47.3458 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2019-03-07 14:29:04.0709 AllServer 0001 (LocationComponent.cs:62) location add key: 383182925987896 instanceId: 383182925987897
+2019-03-07 14:29:05.0103 AllServer 0001 (LocationComponent.cs:169) location get key: 383182925987896 383182925987897
+2019-03-07 14:31:45.7468 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2019-03-07 14:32:09.4150 AllServer 0001 (LocationComponent.cs:62) location add key: 383182938112058 instanceId: 383182938112059
+2019-03-07 14:32:11.0419 AllServer 0001 (LocationComponent.cs:169) location get key: 383182938112058 383182938112059

@@ -1,0 +1,4 @@
+﻿1.AEvent:主要是客户端自己的事件处理相应（Game.EventSystem.Run(EventIdType.AddRobotEvent)执行，响应带有EventIdType.AddRobotEvent属性的类中的Run方法）
+2.AMHandler:主要事Server到Client的接受（ AMHandler<G2C_PlayerNumericalChange>，尖括号中是Server端发送的Proto消息，客户端接收后执行相应的动作）
+3.AMRpcHandler:主要应用于Server端 AMRpcHandler<G2M_CreateRoom, M2G_CreateRoom>，接受Client发来的请求，执行后并作出回复，客户端并会收到回复
+4.

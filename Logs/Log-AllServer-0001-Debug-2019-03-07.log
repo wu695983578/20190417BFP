@@ -1,0 +1,745 @@
+2019-03-07 13:51:44.2104 AllServer 0001 (Session.cs:150) { "_t" : "C2R_Login", "RpcId" : 1, "Account" : "", "Password" : "111111" }
+2019-03-07 13:51:44.2231 AllServer 0001 (Session.cs:269) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 13:51:44.2485 AllServer 0001 (Session.cs:150) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 13:51:44.2485 AllServer 0001 (Session.cs:269) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("1233996134661901253") }
+2019-03-07 13:51:44.2485 AllServer 0001 (Session.cs:150) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("1233996134661901253") }
+2019-03-07 13:51:44.2485 AllServer 0001 (Session.cs:269) { "_t" : "R2C_Login", "RpcId" : 1, "Error" : 0, "Message" : "", "Address" : "127.0.0.1:10002", "Key" : NumberLong("1233996134661901253") }
+2019-03-07 13:51:44.3061 AllServer 0001 (Session.cs:150) { "_t" : "C2G_LoginGate", "RpcId" : 2, "Key" : NumberLong("1233996134661901253") }
+2019-03-07 13:51:44.3061 AllServer 0001 (Session.cs:269) { "_t" : "G2C_LoginGate", "RpcId" : 2, "Error" : 0, "Message" : "", "PlayerId" : NumberLong("383182779187262") }
+2019-03-07 13:51:44.3061 AllServer 0001 (Session.cs:269) { "_t" : "G2C_TestHotfixMessage", "Info" : "recv hotfix message success" }
+2019-03-07 13:51:44.3417 AllServer 0001 (Session.cs:150) { "_t" : "C2G_PlayerInfo", "RpcId" : 3 }
+2019-03-07 13:51:44.3417 AllServer 0001 (Session.cs:269) { "_t" : "G2C_PlayerInfo", "RpcId" : 3, "Error" : 0, "Message" : "", "PlayerInfo" : { "RpcId" : 0 }, "PlayerInfos" : [{ "RpcId" : 1 }, { "RpcId" : 2 }, { "RpcId" : 3 }], "TestRepeatedString" : ["9", "10"], "TestRepeatedInt32" : [4, 5, 6], "TestRepeatedInt64" : [NumberLong(7), NumberLong(8)] }
+2019-03-07 13:51:45.3140 AllServer 0001 (Session.cs:150) { "_t" : "C2G_EnterMap", "RpcId" : 1 }
+2019-03-07 13:51:45.3140 AllServer 0001 (Session.cs:269) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182779187262"), "GateSessionId" : NumberLong("383182779187261") }
+2019-03-07 13:51:45.3140 AllServer 0001 (Session.cs:150) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182779187262"), "GateSessionId" : NumberLong("383182779187261") }
+2019-03-07 13:51:45.3229 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182779252801"), "InstanceId" : NumberLong("383182779252802") }
+2019-03-07 13:51:45.3229 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182779252801"), "InstanceId" : NumberLong("383182779252802") }
+2019-03-07 13:51:45.3229 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 13:51:45.3229 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 13:51:45.3229 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182779187261"), "Units" : [{ "UnitId" : NumberLong("383182779252801"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 13:51:45.3414 AllServer 0001 (Session.cs:150) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182779187261"), "Units" : [{ "UnitId" : NumberLong("383182779252801"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 13:51:45.3414 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong(0), "Units" : [{ "UnitId" : NumberLong("383182779252801"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 13:51:45.3414 AllServer 0001 (Session.cs:269) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182779252801") }
+2019-03-07 13:51:45.3414 AllServer 0001 (Session.cs:150) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182779252801") }
+2019-03-07 13:51:45.3414 AllServer 0001 (Session.cs:269) { "_t" : "G2C_EnterMap", "RpcId" : 1, "Error" : 0, "Message" : "", "UnitId" : NumberLong("383182779252801"), "Units" : [] }
+2019-03-07 13:51:46.1693 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.1693 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 4, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.1693 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182779252801") }
+2019-03-07 13:51:46.1693 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182779252801") }
+2019-03-07 13:51:46.1807 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182779252802") }
+2019-03-07 13:51:46.1807 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182779252802") }
+2019-03-07 13:51:46.1807 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.1807 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.1807 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 13:51:46.1807 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 13:51:46.2229 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-10, 0, -10),(-13.6724, 0, -5.510431),
+2019-03-07 13:51:46.2292 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182779187261"), "_id" : NumberLong("383182779252801"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-13.672395706176758], "Ys" : [0.0], "Zs" : [-5.5104312896728516] }
+2019-03-07 13:51:46.2292 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182779187261"), "_id" : NumberLong("383182779252801"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-13.672395706176758], "Ys" : [0.0], "Zs" : [-5.5104312896728516] }
+2019-03-07 13:51:46.2292 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182779252801"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-13.672395706176758], "Ys" : [0.0], "Zs" : [-5.5104312896728516] }
+2019-03-07 13:51:46.2292 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.2292 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.2466 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:46.2466 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:46.2466 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 4, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:46.3706 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.3706 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.3706 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.3706 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 13:51:46.3706 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 13:51:46.3706 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 5, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.3706 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.3706 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.3706 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:46.3706 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:46.3706 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 5, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:46.5871 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.5871 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.5871 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.5871 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 13:51:46.5871 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 13:51:46.5871 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.5871 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.5871 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.5871 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:46.5871 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:46.5871 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:46.9847 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.9847 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 11, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.9847 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 11, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:46.9847 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2019-03-07 13:51:46.9847 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2019-03-07 13:51:46.9847 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 7, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.9847 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.9847 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:46.9847 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:46.9847 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:46.9847 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 7, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:47.2334 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:47.2334 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 13, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:47.2334 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 13, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -13.672395706176758, "Y" : 0.010000000707805157, "Z" : -5.5104312896728516 }
+2019-03-07 13:51:47.2334 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 13, "Error" : 0, "Message" : null }
+2019-03-07 13:51:47.2334 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 13, "Error" : 0, "Message" : null }
+2019-03-07 13:51:47.2334 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 13:51:47.2334 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 14, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:47.2334 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 14, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:47.2334 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 14, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:47.2334 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 14, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:47.2334 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -11.393036842346191, "Y" : 0.010000000707805157, "Z" : -6.3882884979248047 }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 15, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -11.393036842346191, "Y" : 0.010000000707805157, "Z" : -6.3882884979248047 }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 15, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : -11.393036842346191, "Y" : 0.010000000707805157, "Z" : -6.3882884979248047 }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 15, "Error" : 0, "Message" : null }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 15, "Error" : 0, "Message" : null }
+2019-03-07 13:51:50.4457 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-13.6724, 0, -5.510431),(-11.39304, 0, -6.388288),
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182779187261"), "_id" : NumberLong("383182779252801"), "X" : -13.672395706176758, "Y" : 0.0, "Z" : -5.5104312896728516, "Xs" : [-11.393036842346191], "Ys" : [0.0], "Zs" : [-6.3882884979248047] }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182779187261"), "_id" : NumberLong("383182779252801"), "X" : -13.672395706176758, "Y" : 0.0, "Z" : -5.5104312896728516, "Xs" : [-11.393036842346191], "Ys" : [0.0], "Zs" : [-6.3882884979248047] }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182779252801"), "X" : -13.672395706176758, "Y" : 0.0, "Z" : -5.5104312896728516, "Xs" : [-11.393036842346191], "Ys" : [0.0], "Zs" : [-6.3882884979248047] }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 9, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 16, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 16, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 16, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 16, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:51:50.4457 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 9, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.2255 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.2274 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.2274 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetRequest", "RpcId" : 17, "Key" : NumberLong("383182779252801") }
+2019-03-07 13:53:06.2274 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetRequest", "RpcId" : 17, "Key" : NumberLong("383182779252801") }
+2019-03-07 13:53:06.2274 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetResponse", "RpcId" : 17, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182779252802") }
+2019-03-07 13:53:06.2274 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetResponse", "RpcId" : 17, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182779252802") }
+2019-03-07 13:53:06.2274 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 18, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.2274 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 18, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.2274 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 18, "Error" : 0, "Message" : null }
+2019-03-07 13:53:06.2274 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 18, "Error" : 0, "Message" : null }
+2019-03-07 13:53:06.2274 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-11.39304, 0, -6.388288),(-2.6, 0, 2),(1.2, 0, 3.8),(26.23882, 0, 17.10493),
+2019-03-07 13:53:06.2274 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182779187261"), "_id" : NumberLong("383182779252801"), "X" : -11.393036842346191, "Y" : 0.0, "Z" : -6.3882884979248047, "Xs" : [-2.6000001430511475, 1.2000000476837158, 26.238822937011719], "Ys" : [0.0, 0.0, 0.0], "Zs" : [2.0, 3.8000001907348633, 17.104934692382812] }
+2019-03-07 13:53:06.2426 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182779187261"), "_id" : NumberLong("383182779252801"), "X" : -11.393036842346191, "Y" : 0.0, "Z" : -6.3882884979248047, "Xs" : [-2.6000001430511475, 1.2000000476837158, 26.238822937011719], "Ys" : [0.0, 0.0, 0.0], "Zs" : [2.0, 3.8000001907348633, 17.104934692382812] }
+2019-03-07 13:53:06.2426 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182779252801"), "X" : -11.393036842346191, "Y" : 0.0, "Z" : -6.3882884979248047, "Xs" : [-2.6000001430511475, 1.2000000476837158, 26.238822937011719], "Ys" : [0.0, 0.0, 0.0], "Zs" : [2.0, 3.8000001907348633, 17.104934692382812] }
+2019-03-07 13:53:06.2426 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 19, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.2426 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 19, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.2426 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 19, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.2426 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 19, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.2426 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.4295 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.4295 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 20, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.4295 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 20, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.4305 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 20, "Error" : 0, "Message" : null }
+2019-03-07 13:53:06.4305 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 20, "Error" : 0, "Message" : null }
+2019-03-07 13:53:06.4305 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 11, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.4305 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 21, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.4305 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 21, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.4305 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 21, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.4305 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 21, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.4305 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 11, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.6403 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.6403 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 22, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.6403 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 22, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.6403 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 22, "Error" : 0, "Message" : null }
+2019-03-07 13:53:06.6403 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 22, "Error" : 0, "Message" : null }
+2019-03-07 13:53:06.6403 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.6403 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 23, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.6403 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 23, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.6403 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 23, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.6403 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 23, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.6403 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.9872 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.9872 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 24, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.9872 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 24, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:06.9872 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 24, "Error" : 0, "Message" : null }
+2019-03-07 13:53:06.9872 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 24, "Error" : 0, "Message" : null }
+2019-03-07 13:53:06.9872 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 13, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.9872 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 25, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.9872 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 25, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:53:06.9872 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 25, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.9872 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 25, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:06.9872 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 13, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:07.2345 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:07.2345 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 26, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:07.2345 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 26, "ActorId" : NumberLong("383182779252802"), "_id" : NumberLong(0), "X" : 26.238822937011719, "Y" : 0.010000000707805157, "Z" : 17.104936599731445 }
+2019-03-07 13:53:07.2345 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 26, "Error" : 0, "Message" : null }
+2019-03-07 13:53:07.2345 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 26, "Error" : 0, "Message" : null }
+2019-03-07 13:53:07.2345 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 14, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 13:53:07.2345 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 27, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:53:07.2345 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 27, "ActorId" : NumberLong("383182779252802"), "Info" : "actor rpc request" }
+2019-03-07 13:53:07.2345 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 27, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:07.2345 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 27, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 13:53:07.2345 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 14, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:42.9576 AllServer 0001 (Session.cs:150) { "_t" : "C2R_Login", "RpcId" : 1, "Account" : "", "Password" : "111111" }
+2019-03-07 14:03:42.9712 AllServer 0001 (Session.cs:269) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 14:03:42.9935 AllServer 0001 (Session.cs:150) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 14:03:42.9935 AllServer 0001 (Session.cs:269) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("-4339069387911483522") }
+2019-03-07 14:03:42.9935 AllServer 0001 (Session.cs:150) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("-4339069387911483522") }
+2019-03-07 14:03:42.9935 AllServer 0001 (Session.cs:269) { "_t" : "R2C_Login", "RpcId" : 1, "Error" : 0, "Message" : "", "Address" : "127.0.0.1:10002", "Key" : NumberLong("-4339069387911483522") }
+2019-03-07 14:03:43.0502 AllServer 0001 (Session.cs:150) { "_t" : "C2G_LoginGate", "RpcId" : 2, "Key" : NumberLong("-4339069387911483522") }
+2019-03-07 14:03:43.0502 AllServer 0001 (Session.cs:269) { "_t" : "G2C_LoginGate", "RpcId" : 2, "Error" : 0, "Message" : "", "PlayerId" : NumberLong("383182826307639") }
+2019-03-07 14:03:43.0558 AllServer 0001 (Session.cs:269) { "_t" : "G2C_TestHotfixMessage", "Info" : "recv hotfix message success" }
+2019-03-07 14:03:43.0943 AllServer 0001 (Session.cs:150) { "_t" : "C2G_PlayerInfo", "RpcId" : 3 }
+2019-03-07 14:03:43.1037 AllServer 0001 (Session.cs:269) { "_t" : "G2C_PlayerInfo", "RpcId" : 3, "Error" : 0, "Message" : "", "PlayerInfo" : { "RpcId" : 0 }, "PlayerInfos" : [{ "RpcId" : 1 }, { "RpcId" : 2 }, { "RpcId" : 3 }], "TestRepeatedString" : ["9", "10"], "TestRepeatedInt32" : [4, 5, 6], "TestRepeatedInt64" : [NumberLong(7), NumberLong(8)] }
+2019-03-07 14:03:44.0013 AllServer 0001 (Session.cs:150) { "_t" : "C2G_EnterMap", "RpcId" : 1 }
+2019-03-07 14:03:44.0013 AllServer 0001 (Session.cs:269) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182826307639"), "GateSessionId" : NumberLong("383182826307638") }
+2019-03-07 14:03:44.0013 AllServer 0001 (Session.cs:150) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182826307639"), "GateSessionId" : NumberLong("383182826307638") }
+2019-03-07 14:03:44.0096 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182826373178"), "InstanceId" : NumberLong("383182826373179") }
+2019-03-07 14:03:44.0096 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182826373178"), "InstanceId" : NumberLong("383182826373179") }
+2019-03-07 14:03:44.0096 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 14:03:44.0096 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 14:03:44.0096 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182826307638"), "Units" : [{ "UnitId" : NumberLong("383182826373178"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:03:44.0266 AllServer 0001 (Session.cs:150) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182826307638"), "Units" : [{ "UnitId" : NumberLong("383182826373178"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:03:44.0266 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong(0), "Units" : [{ "UnitId" : NumberLong("383182826373178"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:03:44.0266 AllServer 0001 (Session.cs:269) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182826373178") }
+2019-03-07 14:03:44.0266 AllServer 0001 (Session.cs:150) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182826373178") }
+2019-03-07 14:03:44.0266 AllServer 0001 (Session.cs:269) { "_t" : "G2C_EnterMap", "RpcId" : 1, "Error" : 0, "Message" : "", "UnitId" : NumberLong("383182826373178"), "Units" : [] }
+2019-03-07 14:03:44.6578 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:44.6578 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 4, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:03:44.6578 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182826373178") }
+2019-03-07 14:03:44.6655 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182826373178") }
+2019-03-07 14:03:44.6655 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182826373179") }
+2019-03-07 14:03:44.6655 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182826373179") }
+2019-03-07 14:03:44.6849 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:44.6849 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:44.6849 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 14:03:44.6849 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 14:03:44.7249 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-10, 0, -10),(-12.77515, 0, 0.05779445),
+2019-03-07 14:03:44.7304 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182826307638"), "_id" : NumberLong("383182826373178"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-12.775149345397949], "Ys" : [0.0], "Zs" : [0.057794451713562012] }
+2019-03-07 14:03:44.7304 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182826307638"), "_id" : NumberLong("383182826373178"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-12.775149345397949], "Ys" : [0.0], "Zs" : [0.057794451713562012] }
+2019-03-07 14:03:44.7304 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182826373178"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-12.775149345397949], "Ys" : [0.0], "Zs" : [0.057794451713562012] }
+2019-03-07 14:03:44.7434 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:44.7434 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:44.7434 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:44.7434 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:44.7434 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 4, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:44.8563 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:44.8563 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:44.8563 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:44.8563 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 14:03:44.8563 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 14:03:44.8563 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 5, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:03:44.8563 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:44.8563 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:44.8563 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:44.8563 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:44.8563 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 5, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.0692 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:45.0692 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:45.0692 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:45.0692 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 14:03:45.0692 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 14:03:45.0711 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.0711 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.0711 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.0711 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.0711 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.0711 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.2349 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:45.2349 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 11, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:45.2349 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 11, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:45.2349 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2019-03-07 14:03:45.2349 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2019-03-07 14:03:45.2349 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 7, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.2349 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.2349 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.2349 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.2349 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.2349 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 7, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.4184 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:45.4184 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 13, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:45.4184 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 13, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : -12.775149345397949, "Y" : 0.010000000707805157, "Z" : 0.057794570922851562 }
+2019-03-07 14:03:45.4184 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 13, "Error" : 0, "Message" : null }
+2019-03-07 14:03:45.4184 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 13, "Error" : 0, "Message" : null }
+2019-03-07 14:03:45.4184 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.4184 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 14, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.4184 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 14, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.4184 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 14, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.4184 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 14, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.4184 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : 13.277580261230469, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 15, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 13.277580261230469, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 15, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 13.277580261230469, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 15, "Error" : 0, "Message" : null }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 15, "Error" : 0, "Message" : null }
+2019-03-07 14:03:45.7159 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-11.28247, 0, -5.352007),(-2.6, 0, 2),(13.27758, 0, 8.913515),
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182826307638"), "_id" : NumberLong("383182826373178"), "X" : -11.30376148223877, "Y" : 0.0, "Z" : -5.2748618125915527, "Xs" : [-2.6000001430511475, 13.277580261230469], "Ys" : [0.0, 0.0], "Zs" : [2.0, 8.9135150909423828] }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182826307638"), "_id" : NumberLong("383182826373178"), "X" : -11.30376148223877, "Y" : 0.0, "Z" : -5.2748618125915527, "Xs" : [-2.6000001430511475, 13.277580261230469], "Ys" : [0.0, 0.0], "Zs" : [2.0, 8.9135150909423828] }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182826373178"), "X" : -11.30376148223877, "Y" : 0.0, "Z" : -5.2748618125915527, "Xs" : [-2.6000001430511475, 13.277580261230469], "Ys" : [0.0, 0.0], "Zs" : [2.0, 8.9135150909423828] }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 9, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 16, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 16, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 16, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 16, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.7159 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 9, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.9470 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : 13.277580261230469, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:45.9470 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 17, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 13.277580261230469, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:45.9470 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 17, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 13.277580261230469, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:45.9470 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 17, "Error" : 0, "Message" : null }
+2019-03-07 14:03:45.9470 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 17, "Error" : 0, "Message" : null }
+2019-03-07 14:03:45.9470 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.9470 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 18, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.9470 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 18, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:45.9470 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 18, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.9470 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 18, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:45.9470 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.1366 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : 13.277580261230469, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:46.1366 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 19, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 13.277580261230469, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:46.1366 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 19, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 13.277580261230469, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:46.1366 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 19, "Error" : 0, "Message" : null }
+2019-03-07 14:03:46.1366 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 19, "Error" : 0, "Message" : null }
+2019-03-07 14:03:46.1366 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 11, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.1366 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 20, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.1366 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 20, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.1366 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 20, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.1366 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 20, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.1366 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 11, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : 13.648221969604492, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 21, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 13.648221969604492, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 21, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 13.648221969604492, "Y" : 0.010000000707805157, "Z" : 8.9135150909423828 }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 21, "Error" : 0, "Message" : null }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 21, "Error" : 0, "Message" : null }
+2019-03-07 14:03:46.2967 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-9.173873, 0, -3.494637),(-2.6, 0, 2),(13.64822, 0, 8.913515),
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182826307638"), "_id" : NumberLong("383182826373178"), "X" : -9.0932826995849609, "Y" : 0.0, "Z" : -3.4272778034210205, "Xs" : [-2.6000001430511475, 13.648222923278809], "Ys" : [0.0, 0.0], "Zs" : [2.0, 8.9135150909423828] }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182826307638"), "_id" : NumberLong("383182826373178"), "X" : -9.0932826995849609, "Y" : 0.0, "Z" : -3.4272778034210205, "Xs" : [-2.6000001430511475, 13.648222923278809], "Ys" : [0.0, 0.0], "Zs" : [2.0, 8.9135150909423828] }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182826373178"), "X" : -9.0932826995849609, "Y" : 0.0, "Z" : -3.4272778034210205, "Xs" : [-2.6000001430511475, 13.648222923278809], "Ys" : [0.0, 0.0], "Zs" : [2.0, 8.9135150909423828] }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 22, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 22, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 22, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 22, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.2967 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : 21.087076187133789, "Y" : 0.010000000707805157, "Z" : 9.0487041473388672 }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 23, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 21.087076187133789, "Y" : 0.010000000707805157, "Z" : 9.0487041473388672 }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 23, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 21.087076187133789, "Y" : 0.010000000707805157, "Z" : 9.0487041473388672 }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 23, "Error" : 0, "Message" : null }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 23, "Error" : 0, "Message" : null }
+2019-03-07 14:03:46.4955 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-8.420795, 0, -3.062349),(-2.6, 0, 2),(21.08708, 0, 9.048704),
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182826307638"), "_id" : NumberLong("383182826373178"), "X" : -8.2230043411254883, "Y" : 0.0, "Z" : -2.95501708984375, "Xs" : [-2.6000001430511475, 21.087076187133789], "Ys" : [0.0, 0.0], "Zs" : [2.0, 9.0487041473388672] }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182826307638"), "_id" : NumberLong("383182826373178"), "X" : -8.2230043411254883, "Y" : 0.0, "Z" : -2.95501708984375, "Xs" : [-2.6000001430511475, 21.087076187133789], "Ys" : [0.0, 0.0], "Zs" : [2.0, 9.0487041473388672] }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182826373178"), "X" : -8.2230043411254883, "Y" : 0.0, "Z" : -2.95501708984375, "Xs" : [-2.6000001430511475, 21.087076187133789], "Ys" : [0.0, 0.0], "Zs" : [2.0, 9.0487041473388672] }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 13, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 24, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 24, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 24, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 24, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.4955 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 13, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.7261 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : 21.922182083129883, "Y" : 0.010000000707805157, "Z" : 9.0487041473388672 }
+2019-03-07 14:03:46.7261 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 25, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 21.922182083129883, "Y" : 0.010000000707805157, "Z" : 9.0487041473388672 }
+2019-03-07 14:03:46.7261 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 25, "ActorId" : NumberLong("383182826373179"), "_id" : NumberLong(0), "X" : 21.922182083129883, "Y" : 0.010000000707805157, "Z" : 9.0487041473388672 }
+2019-03-07 14:03:46.7270 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 25, "Error" : 0, "Message" : null }
+2019-03-07 14:03:46.7270 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 25, "Error" : 0, "Message" : null }
+2019-03-07 14:03:46.7270 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-7.464761, 0, -2.28685),(-2.6, 0, 2),(21.92218, 0, 9.048703),
+2019-03-07 14:03:46.7270 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182826307638"), "_id" : NumberLong("383182826373178"), "X" : -7.3634128570556641, "Y" : 0.0, "Z" : -2.1975412368774414, "Xs" : [-2.6000001430511475, 21.922182083129883], "Ys" : [0.0, 0.0], "Zs" : [2.0, 9.0487031936645508] }
+2019-03-07 14:03:46.7270 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182826307638"), "_id" : NumberLong("383182826373178"), "X" : -7.3634128570556641, "Y" : 0.0, "Z" : -2.1975412368774414, "Xs" : [-2.6000001430511475, 21.922182083129883], "Ys" : [0.0, 0.0], "Zs" : [2.0, 9.0487031936645508] }
+2019-03-07 14:03:46.7270 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182826373178"), "X" : -7.3634128570556641, "Y" : 0.0, "Z" : -2.1975412368774414, "Xs" : [-2.6000001430511475, 21.922182083129883], "Ys" : [0.0, 0.0], "Zs" : [2.0, 9.0487031936645508] }
+2019-03-07 14:03:46.7270 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 14, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.7270 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 26, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.7270 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 26, "ActorId" : NumberLong("383182826373179"), "Info" : "actor rpc request" }
+2019-03-07 14:03:46.7270 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 26, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.7270 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 26, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:03:46.7270 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 14, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:16:47.8651 AllServer 0001 (Session.cs:150) { "_t" : "C2R_Login", "RpcId" : 1, "Account" : "", "Password" : "111111" }
+2019-03-07 14:16:47.8772 AllServer 0001 (Session.cs:269) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 14:16:47.8920 AllServer 0001 (Session.cs:150) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 14:16:47.8920 AllServer 0001 (Session.cs:269) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("-1598153086170232682") }
+2019-03-07 14:16:47.8920 AllServer 0001 (Session.cs:150) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("-1598153086170232682") }
+2019-03-07 14:16:47.9016 AllServer 0001 (Session.cs:269) { "_t" : "R2C_Login", "RpcId" : 1, "Error" : 0, "Message" : "", "Address" : "127.0.0.1:10002", "Key" : NumberLong("-1598153086170232682") }
+2019-03-07 14:16:47.9448 AllServer 0001 (Session.cs:150) { "_t" : "C2G_LoginGate", "RpcId" : 2, "Key" : NumberLong("-1598153086170232682") }
+2019-03-07 14:16:47.9480 AllServer 0001 (Session.cs:269) { "_t" : "G2C_LoginGate", "RpcId" : 2, "Error" : 0, "Message" : "", "PlayerId" : NumberLong("383182877687858") }
+2019-03-07 14:16:47.9480 AllServer 0001 (Session.cs:269) { "_t" : "G2C_TestHotfixMessage", "Info" : "recv hotfix message success" }
+2019-03-07 14:16:47.9869 AllServer 0001 (Session.cs:150) { "_t" : "C2G_PlayerInfo", "RpcId" : 3 }
+2019-03-07 14:16:47.9961 AllServer 0001 (Session.cs:269) { "_t" : "G2C_PlayerInfo", "RpcId" : 3, "Error" : 0, "Message" : "", "PlayerInfo" : { "RpcId" : 0 }, "PlayerInfos" : [{ "RpcId" : 1 }, { "RpcId" : 2 }, { "RpcId" : 3 }], "TestRepeatedString" : ["9", "10"], "TestRepeatedInt32" : [4, 5, 6], "TestRepeatedInt64" : [NumberLong(7), NumberLong(8)] }
+2019-03-07 14:16:48.8944 AllServer 0001 (Session.cs:150) { "_t" : "C2G_EnterMap", "RpcId" : 1 }
+2019-03-07 14:16:48.8944 AllServer 0001 (Session.cs:269) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182877687858"), "GateSessionId" : NumberLong("383182877687857") }
+2019-03-07 14:16:48.8944 AllServer 0001 (Session.cs:150) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182877687858"), "GateSessionId" : NumberLong("383182877687857") }
+2019-03-07 14:16:48.9062 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182877753397"), "InstanceId" : NumberLong("383182877753398") }
+2019-03-07 14:16:48.9062 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182877753397"), "InstanceId" : NumberLong("383182877753398") }
+2019-03-07 14:16:48.9062 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 14:16:48.9062 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 14:16:48.9176 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182877687857"), "Units" : [{ "UnitId" : NumberLong("383182877753397"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:16:48.9176 AllServer 0001 (Session.cs:150) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182877687857"), "Units" : [{ "UnitId" : NumberLong("383182877753397"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:16:48.9176 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong(0), "Units" : [{ "UnitId" : NumberLong("383182877753397"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:16:48.9176 AllServer 0001 (Session.cs:269) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182877753397") }
+2019-03-07 14:16:48.9307 AllServer 0001 (Session.cs:150) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182877753397") }
+2019-03-07 14:16:48.9307 AllServer 0001 (Session.cs:269) { "_t" : "G2C_EnterMap", "RpcId" : 1, "Error" : 0, "Message" : "", "UnitId" : NumberLong("383182877753397"), "Units" : [] }
+2019-03-07 14:16:49.9523 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -17.655595779418945, "Y" : 0.010000000707805157, "Z" : 5.2702503204345703 }
+2019-03-07 14:16:49.9523 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 4, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:16:49.9523 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182877753397") }
+2019-03-07 14:16:49.9523 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182877753397") }
+2019-03-07 14:16:49.9613 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182877753398") }
+2019-03-07 14:16:49.9613 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182877753398") }
+2019-03-07 14:16:49.9613 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182877753398"), "_id" : NumberLong(0), "X" : -17.655595779418945, "Y" : 0.010000000707805157, "Z" : 5.2702503204345703 }
+2019-03-07 14:16:49.9613 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182877753398"), "_id" : NumberLong(0), "X" : -17.655595779418945, "Y" : 0.010000000707805157, "Z" : 5.2702503204345703 }
+2019-03-07 14:16:49.9613 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 14:16:49.9613 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 14:16:50.0063 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-10, 0, -10),(-17.6556, 0, 5.27025),
+2019-03-07 14:16:50.0124 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182877687857"), "_id" : NumberLong("383182877753397"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-17.655595779418945], "Ys" : [0.0], "Zs" : [5.2702503204345703] }
+2019-03-07 14:16:50.0124 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182877687857"), "_id" : NumberLong("383182877753397"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-17.655595779418945], "Ys" : [0.0], "Zs" : [5.2702503204345703] }
+2019-03-07 14:16:50.0124 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182877753397"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-17.655595779418945], "Ys" : [0.0], "Zs" : [5.2702503204345703] }
+2019-03-07 14:16:50.0252 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182877753398"), "Info" : "actor rpc request" }
+2019-03-07 14:16:50.0252 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182877753398"), "Info" : "actor rpc request" }
+2019-03-07 14:16:50.0252 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:16:50.0252 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:16:50.0252 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 4, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:16:50.2825 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -17.655595779418945, "Y" : 0.010000000707805157, "Z" : 5.2702503204345703 }
+2019-03-07 14:16:50.2825 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182877753398"), "_id" : NumberLong(0), "X" : -17.655595779418945, "Y" : 0.010000000707805157, "Z" : 5.2702503204345703 }
+2019-03-07 14:16:50.2825 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182877753398"), "_id" : NumberLong(0), "X" : -17.655595779418945, "Y" : 0.010000000707805157, "Z" : 5.2702503204345703 }
+2019-03-07 14:16:50.2825 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 14:16:50.2825 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 14:16:50.2825 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 5, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:16:50.2825 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182877753398"), "Info" : "actor rpc request" }
+2019-03-07 14:16:50.2825 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182877753398"), "Info" : "actor rpc request" }
+2019-03-07 14:16:50.2825 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:16:50.2825 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:16:50.2825 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 5, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:16:50.4810 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -17.655595779418945, "Y" : 0.010000000707805157, "Z" : 5.2702503204345703 }
+2019-03-07 14:16:50.4810 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182877753398"), "_id" : NumberLong(0), "X" : -17.655595779418945, "Y" : 0.010000000707805157, "Z" : 5.2702503204345703 }
+2019-03-07 14:16:50.4810 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182877753398"), "_id" : NumberLong(0), "X" : -17.655595779418945, "Y" : 0.010000000707805157, "Z" : 5.2702503204345703 }
+2019-03-07 14:16:50.4810 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 14:16:50.4810 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 14:16:50.4810 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:16:50.4810 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182877753398"), "Info" : "actor rpc request" }
+2019-03-07 14:16:50.4810 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182877753398"), "Info" : "actor rpc request" }
+2019-03-07 14:16:50.4810 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:16:50.4810 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:16:50.4810 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:05.9299 AllServer 0001 (Session.cs:150) { "_t" : "C2R_Login", "RpcId" : 1, "Account" : "", "Password" : "111111" }
+2019-03-07 14:27:05.9437 AllServer 0001 (Session.cs:269) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 14:27:05.9603 AllServer 0001 (Session.cs:150) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 14:27:05.9697 AllServer 0001 (Session.cs:269) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("-5891432575253355426") }
+2019-03-07 14:27:05.9697 AllServer 0001 (Session.cs:150) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("-5891432575253355426") }
+2019-03-07 14:27:05.9805 AllServer 0001 (Session.cs:269) { "_t" : "R2C_Login", "RpcId" : 1, "Error" : 0, "Message" : "", "Address" : "127.0.0.1:10002", "Key" : NumberLong("-5891432575253355426") }
+2019-03-07 14:27:06.0245 AllServer 0001 (Session.cs:150) { "_t" : "C2G_LoginGate", "RpcId" : 2, "Key" : NumberLong("-5891432575253355426") }
+2019-03-07 14:27:06.0245 AllServer 0001 (Session.cs:269) { "_t" : "G2C_LoginGate", "RpcId" : 2, "Error" : 0, "Message" : "", "PlayerId" : NumberLong("383182918254644") }
+2019-03-07 14:27:06.0245 AllServer 0001 (Session.cs:269) { "_t" : "G2C_TestHotfixMessage", "Info" : "recv hotfix message success" }
+2019-03-07 14:27:06.0682 AllServer 0001 (Session.cs:150) { "_t" : "C2G_PlayerInfo", "RpcId" : 3 }
+2019-03-07 14:27:06.0800 AllServer 0001 (Session.cs:269) { "_t" : "G2C_PlayerInfo", "RpcId" : 3, "Error" : 0, "Message" : "", "PlayerInfo" : { "RpcId" : 0 }, "PlayerInfos" : [{ "RpcId" : 1 }, { "RpcId" : 2 }, { "RpcId" : 3 }], "TestRepeatedString" : ["9", "10"], "TestRepeatedInt32" : [4, 5, 6], "TestRepeatedInt64" : [NumberLong(7), NumberLong(8)] }
+2019-03-07 14:27:07.4785 AllServer 0001 (Session.cs:150) { "_t" : "C2G_EnterMap", "RpcId" : 1 }
+2019-03-07 14:27:07.4785 AllServer 0001 (Session.cs:269) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182918254644"), "GateSessionId" : NumberLong("383182918254643") }
+2019-03-07 14:27:07.4785 AllServer 0001 (Session.cs:150) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182918254644"), "GateSessionId" : NumberLong("383182918254643") }
+2019-03-07 14:27:07.4955 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182918320183"), "InstanceId" : NumberLong("383182918320184") }
+2019-03-07 14:27:07.4955 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182918320183"), "InstanceId" : NumberLong("383182918320184") }
+2019-03-07 14:27:07.4955 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 14:27:07.5102 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 14:27:07.5102 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182918254643"), "Units" : [{ "UnitId" : NumberLong("383182918320183"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:27:07.5277 AllServer 0001 (Session.cs:150) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182918254643"), "Units" : [{ "UnitId" : NumberLong("383182918320183"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:27:07.5277 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong(0), "Units" : [{ "UnitId" : NumberLong("383182918320183"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:27:07.5277 AllServer 0001 (Session.cs:269) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182918320183") }
+2019-03-07 14:27:07.5424 AllServer 0001 (Session.cs:150) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182918320183") }
+2019-03-07 14:27:07.5424 AllServer 0001 (Session.cs:269) { "_t" : "G2C_EnterMap", "RpcId" : 1, "Error" : 0, "Message" : "", "UnitId" : NumberLong("383182918320183"), "Units" : [] }
+2019-03-07 14:27:10.1507 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.1507 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 4, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.1507 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182918320183") }
+2019-03-07 14:27:10.1652 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182918320183") }
+2019-03-07 14:27:10.1652 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182918320184") }
+2019-03-07 14:27:10.1652 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182918320184") }
+2019-03-07 14:27:10.1857 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.1857 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.1978 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 14:27:10.1978 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 14:27:10.2424 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-10, 0, -10),(-16.26441, 0, 0.6212636),
+2019-03-07 14:27:10.2513 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182918254643"), "_id" : NumberLong("383182918320183"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-16.264408111572266], "Ys" : [0.0], "Zs" : [0.62126356363296509] }
+2019-03-07 14:27:10.2588 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182918254643"), "_id" : NumberLong("383182918320183"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-16.264408111572266], "Ys" : [0.0], "Zs" : [0.62126356363296509] }
+2019-03-07 14:27:10.2588 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182918320183"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-16.264408111572266], "Ys" : [0.0], "Zs" : [0.62126356363296509] }
+2019-03-07 14:27:10.2588 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.2752 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.2752 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.2937 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.2937 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 4, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.3316 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.3316 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.3382 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.3382 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 14:27:10.3382 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 14:27:10.3382 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 5, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.3382 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.3382 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.3547 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.3547 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.3547 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 5, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.5127 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.5127 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.5127 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.5127 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 14:27:10.5240 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 14:27:10.5240 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.5240 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.5240 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.5240 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.5240 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.5401 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.6794 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.6839 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 11, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.6839 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 11, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.6839 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2019-03-07 14:27:10.6839 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2019-03-07 14:27:10.6839 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 7, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.6977 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.6977 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.6977 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.6977 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.6977 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 7, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.8460 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.8460 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 13, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.8521 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 13, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:10.8521 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 13, "Error" : 0, "Message" : null }
+2019-03-07 14:27:10.8521 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 13, "Error" : 0, "Message" : null }
+2019-03-07 14:27:10.8521 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.8521 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 14, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.8701 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 14, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:10.8701 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 14, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.8701 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 14, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:10.8701 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:11.2121 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:11.2121 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 15, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:11.2121 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 15, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:11.2121 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 15, "Error" : 0, "Message" : null }
+2019-03-07 14:27:11.2121 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 15, "Error" : 0, "Message" : null }
+2019-03-07 14:27:11.2121 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 9, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:27:11.2287 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 16, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:11.2287 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 16, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:11.2287 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 16, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:11.2287 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 16, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:11.2287 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 9, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:11.4106 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:11.4106 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 17, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:11.4157 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 17, "ActorId" : NumberLong("383182918320184"), "_id" : NumberLong(0), "X" : -16.264408111572266, "Y" : 0.010000000707805157, "Z" : 0.62126350402832031 }
+2019-03-07 14:27:11.4157 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 17, "Error" : 0, "Message" : null }
+2019-03-07 14:27:11.4157 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 17, "Error" : 0, "Message" : null }
+2019-03-07 14:27:11.4157 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:27:11.4157 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 18, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:11.4157 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 18, "ActorId" : NumberLong("383182918320184"), "Info" : "actor rpc request" }
+2019-03-07 14:27:11.4321 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 18, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:11.4321 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 18, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:27:11.4321 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:03.5084 AllServer 0001 (Session.cs:150) { "_t" : "C2R_Login", "RpcId" : 1, "Account" : "", "Password" : "111111" }
+2019-03-07 14:29:03.5210 AllServer 0001 (Session.cs:269) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 14:29:03.5350 AllServer 0001 (Session.cs:150) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 14:29:03.5350 AllServer 0001 (Session.cs:269) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("6064306034764831008") }
+2019-03-07 14:29:03.5414 AllServer 0001 (Session.cs:150) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("6064306034764831008") }
+2019-03-07 14:29:03.5414 AllServer 0001 (Session.cs:269) { "_t" : "R2C_Login", "RpcId" : 1, "Error" : 0, "Message" : "", "Address" : "127.0.0.1:10002", "Key" : NumberLong("6064306034764831008") }
+2019-03-07 14:29:03.5865 AllServer 0001 (Session.cs:150) { "_t" : "C2G_LoginGate", "RpcId" : 2, "Key" : NumberLong("6064306034764831008") }
+2019-03-07 14:29:03.5865 AllServer 0001 (Session.cs:269) { "_t" : "G2C_LoginGate", "RpcId" : 2, "Error" : 0, "Message" : "", "PlayerId" : NumberLong("383182925922357") }
+2019-03-07 14:29:03.5865 AllServer 0001 (Session.cs:269) { "_t" : "G2C_TestHotfixMessage", "Info" : "recv hotfix message success" }
+2019-03-07 14:29:03.6289 AllServer 0001 (Session.cs:150) { "_t" : "C2G_PlayerInfo", "RpcId" : 3 }
+2019-03-07 14:29:03.6380 AllServer 0001 (Session.cs:269) { "_t" : "G2C_PlayerInfo", "RpcId" : 3, "Error" : 0, "Message" : "", "PlayerInfo" : { "RpcId" : 0 }, "PlayerInfos" : [{ "RpcId" : 1 }, { "RpcId" : 2 }, { "RpcId" : 3 }], "TestRepeatedString" : ["9", "10"], "TestRepeatedInt32" : [4, 5, 6], "TestRepeatedInt64" : [NumberLong(7), NumberLong(8)] }
+2019-03-07 14:29:04.0621 AllServer 0001 (Session.cs:150) { "_t" : "C2G_EnterMap", "RpcId" : 1 }
+2019-03-07 14:29:04.0621 AllServer 0001 (Session.cs:269) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182925922357"), "GateSessionId" : NumberLong("383182925922356") }
+2019-03-07 14:29:04.0621 AllServer 0001 (Session.cs:150) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182925922357"), "GateSessionId" : NumberLong("383182925922356") }
+2019-03-07 14:29:04.0621 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182925987896"), "InstanceId" : NumberLong("383182925987897") }
+2019-03-07 14:29:04.0709 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182925987896"), "InstanceId" : NumberLong("383182925987897") }
+2019-03-07 14:29:04.0709 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 14:29:04.0709 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 14:29:04.0709 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182925922356"), "Units" : [{ "UnitId" : NumberLong("383182925987896"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:29:04.0870 AllServer 0001 (Session.cs:150) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182925922356"), "Units" : [{ "UnitId" : NumberLong("383182925987896"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:29:04.0870 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong(0), "Units" : [{ "UnitId" : NumberLong("383182925987896"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:29:04.0870 AllServer 0001 (Session.cs:269) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182925987896") }
+2019-03-07 14:29:04.0870 AllServer 0001 (Session.cs:150) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182925987896") }
+2019-03-07 14:29:04.0870 AllServer 0001 (Session.cs:269) { "_t" : "G2C_EnterMap", "RpcId" : 1, "Error" : 0, "Message" : "", "UnitId" : NumberLong("383182925987896"), "Units" : [] }
+2019-03-07 14:29:05.0062 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.0103 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 4, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.0103 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182925987896") }
+2019-03-07 14:29:05.0103 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182925987896") }
+2019-03-07 14:29:05.0103 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182925987897") }
+2019-03-07 14:29:05.0103 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182925987897") }
+2019-03-07 14:29:05.0103 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182925987897"), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.0259 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182925987897"), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.0259 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 14:29:05.0259 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 14:29:05.0622 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-10, 0, -10),(-8.836731, 0, 4.647692),
+2019-03-07 14:29:05.0622 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182925922356"), "_id" : NumberLong("383182925987896"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-8.83673095703125], "Ys" : [0.0], "Zs" : [4.6476917266845703] }
+2019-03-07 14:29:05.0710 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182925922356"), "_id" : NumberLong("383182925987896"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-8.83673095703125], "Ys" : [0.0], "Zs" : [4.6476917266845703] }
+2019-03-07 14:29:05.0710 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182925987896"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-8.83673095703125], "Ys" : [0.0], "Zs" : [4.6476917266845703] }
+2019-03-07 14:29:05.0710 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182925987897"), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.0710 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182925987897"), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.0879 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:05.0879 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:05.0879 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 4, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:05.1794 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.1806 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182925987897"), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.1806 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182925987897"), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.1806 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 14:29:05.1806 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 14:29:05.1806 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 5, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.1806 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182925987897"), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.1806 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182925987897"), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.1806 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:05.1806 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:05.1806 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 5, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:05.7255 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.7255 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182925987897"), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.7255 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182925987897"), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.7279 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 14:29:05.7279 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 14:29:05.7279 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.7279 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182925987897"), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.7279 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182925987897"), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.7279 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:05.7279 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:05.7279 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:05.9086 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.9086 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 11, "ActorId" : NumberLong("383182925987897"), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.9086 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 11, "ActorId" : NumberLong("383182925987897"), "_id" : NumberLong(0), "X" : -8.8367319107055664, "Y" : 0.010000000707805157, "Z" : 4.6476917266845703 }
+2019-03-07 14:29:05.9086 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2019-03-07 14:29:05.9086 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2019-03-07 14:29:05.9086 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 7, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.9086 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong("383182925987897"), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.9086 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong("383182925987897"), "Info" : "actor rpc request" }
+2019-03-07 14:29:05.9086 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:05.9086 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:29:05.9086 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 7, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:05.6782 AllServer 0001 (Session.cs:150) { "_t" : "C2R_Login", "RpcId" : 1, "Account" : "", "Password" : "111111" }
+2019-03-07 14:32:05.6913 AllServer 0001 (Session.cs:269) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 14:32:05.7039 AllServer 0001 (Session.cs:150) { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2019-03-07 14:32:05.7039 AllServer 0001 (Session.cs:269) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("3691383284776591022") }
+2019-03-07 14:32:05.7118 AllServer 0001 (Session.cs:150) { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : NumberLong("3691383284776591022") }
+2019-03-07 14:32:05.7118 AllServer 0001 (Session.cs:269) { "_t" : "R2C_Login", "RpcId" : 1, "Error" : 0, "Message" : "", "Address" : "127.0.0.1:10002", "Key" : NumberLong("3691383284776591022") }
+2019-03-07 14:32:05.7544 AllServer 0001 (Session.cs:150) { "_t" : "C2G_LoginGate", "RpcId" : 2, "Key" : NumberLong("3691383284776591022") }
+2019-03-07 14:32:05.7544 AllServer 0001 (Session.cs:269) { "_t" : "G2C_LoginGate", "RpcId" : 2, "Error" : 0, "Message" : "", "PlayerId" : NumberLong("383182937849909") }
+2019-03-07 14:32:05.7587 AllServer 0001 (Session.cs:269) { "_t" : "G2C_TestHotfixMessage", "Info" : "recv hotfix message success" }
+2019-03-07 14:32:05.7949 AllServer 0001 (Session.cs:150) { "_t" : "C2G_PlayerInfo", "RpcId" : 3 }
+2019-03-07 14:32:05.7949 AllServer 0001 (Session.cs:269) { "_t" : "G2C_PlayerInfo", "RpcId" : 3, "Error" : 0, "Message" : "", "PlayerInfo" : { "RpcId" : 0 }, "PlayerInfos" : [{ "RpcId" : 1 }, { "RpcId" : 2 }, { "RpcId" : 3 }], "TestRepeatedString" : ["9", "10"], "TestRepeatedInt32" : [4, 5, 6], "TestRepeatedInt64" : [NumberLong(7), NumberLong(8)] }
+2019-03-07 14:32:09.4075 AllServer 0001 (Session.cs:150) { "_t" : "C2G_EnterMap", "RpcId" : 1 }
+2019-03-07 14:32:09.4075 AllServer 0001 (Session.cs:269) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182937849909"), "GateSessionId" : NumberLong("383182937849908") }
+2019-03-07 14:32:09.4075 AllServer 0001 (Session.cs:150) { "_t" : "G2M_CreateUnit", "RpcId" : 2, "PlayerId" : NumberLong("383182937849909"), "GateSessionId" : NumberLong("383182937849908") }
+2019-03-07 14:32:09.4150 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182938112058"), "InstanceId" : NumberLong("383182938112059") }
+2019-03-07 14:32:09.4150 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddRequest", "RpcId" : 3, "Key" : NumberLong("383182938112058"), "InstanceId" : NumberLong("383182938112059") }
+2019-03-07 14:32:09.4150 AllServer 0001 (Session.cs:269) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 14:32:09.4150 AllServer 0001 (Session.cs:150) { "_t" : "ObjectAddResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2019-03-07 14:32:09.4326 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182937849908"), "Units" : [{ "UnitId" : NumberLong("383182938112058"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:32:09.4326 AllServer 0001 (Session.cs:150) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong("383182937849908"), "Units" : [{ "UnitId" : NumberLong("383182938112058"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:32:09.4326 AllServer 0001 (Session.cs:269) { "_t" : "M2C_CreateUnits", "RpcId" : 0, "ActorId" : NumberLong(0), "Units" : [{ "UnitId" : NumberLong("383182938112058"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0 }] }
+2019-03-07 14:32:09.4326 AllServer 0001 (Session.cs:269) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182938112058") }
+2019-03-07 14:32:09.4462 AllServer 0001 (Session.cs:150) { "_t" : "M2G_CreateUnit", "Units" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "UnitId" : NumberLong("383182938112058") }
+2019-03-07 14:32:09.4462 AllServer 0001 (Session.cs:269) { "_t" : "G2C_EnterMap", "RpcId" : 1, "Error" : 0, "Message" : "", "UnitId" : NumberLong("383182938112058"), "Units" : [] }
+2019-03-07 14:32:11.0351 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.0351 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 4, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.0419 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182938112058") }
+2019-03-07 14:32:11.0419 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetRequest", "RpcId" : 4, "Key" : NumberLong("383182938112058") }
+2019-03-07 14:32:11.0419 AllServer 0001 (Session.cs:269) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182938112059") }
+2019-03-07 14:32:11.0419 AllServer 0001 (Session.cs:150) { "_t" : "ObjectGetResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "InstanceId" : NumberLong("383182938112059") }
+2019-03-07 14:32:11.0419 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.0557 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 5, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.0557 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 14:32:11.0557 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2019-03-07 14:32:11.0938 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-10, 0, -10),(-12.4322, 0, 1.077043),
+2019-03-07 14:32:11.0938 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182937849908"), "_id" : NumberLong("383182938112058"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-12.432198524475098], "Ys" : [0.0], "Zs" : [1.0770432949066162] }
+2019-03-07 14:32:11.1040 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182937849908"), "_id" : NumberLong("383182938112058"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-12.432198524475098], "Ys" : [0.0], "Zs" : [1.0770432949066162] }
+2019-03-07 14:32:11.1040 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182938112058"), "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "Xs" : [-12.432198524475098], "Ys" : [0.0], "Zs" : [1.0770432949066162] }
+2019-03-07 14:32:11.1040 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.1040 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.1216 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.1216 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.1216 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 4, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.2589 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.2589 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.2589 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 7, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.2589 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 14:32:11.2589 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2019-03-07 14:32:11.2589 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 5, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.2589 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.2589 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.2589 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.2589 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.2589 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 5, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.4573 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.4573 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.4573 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 9, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.4573 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 14:32:11.4573 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2019-03-07 14:32:11.4573 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 6, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.4573 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.4616 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.4616 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.4616 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.4616 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 6, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.6568 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.6568 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 11, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.6568 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 11, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.6568 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2019-03-07 14:32:11.6568 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2019-03-07 14:32:11.6568 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 7, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.6568 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.6568 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.6568 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.6568 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.6568 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 7, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.8394 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.8394 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 13, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.8394 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 13, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:11.8394 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 13, "Error" : 0, "Message" : null }
+2019-03-07 14:32:11.8394 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 13, "Error" : 0, "Message" : null }
+2019-03-07 14:32:11.8394 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 8, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.8394 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 14, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.8394 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 14, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:11.8394 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 14, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.8394 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 14, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:11.8394 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 8, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.0391 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.0403 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 15, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.0403 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 15, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.0403 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 15, "Error" : 0, "Message" : null }
+2019-03-07 14:32:12.0403 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 15, "Error" : 0, "Message" : null }
+2019-03-07 14:32:12.0403 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 9, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.0403 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 16, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.0403 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 16, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.0403 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 16, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.0403 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 16, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.0403 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 9, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.2542 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.2542 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 17, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.2542 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 17, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.2542 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 17, "Error" : 0, "Message" : null }
+2019-03-07 14:32:12.2588 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 17, "Error" : 0, "Message" : null }
+2019-03-07 14:32:12.2588 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 10, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.2588 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 18, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.2588 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 18, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.2588 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 18, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.2588 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 18, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.2588 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 10, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.4863 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.4863 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 19, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.4863 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 19, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.4863 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 19, "Error" : 0, "Message" : null }
+2019-03-07 14:32:12.4863 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 19, "Error" : 0, "Message" : null }
+2019-03-07 14:32:12.4863 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 11, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.4863 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 20, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.4863 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 20, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.4863 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 20, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.4863 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 20, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.4863 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 11, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.7008 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.7008 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 21, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.7008 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 21, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:12.7008 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 21, "Error" : 0, "Message" : null }
+2019-03-07 14:32:12.7008 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 21, "Error" : 0, "Message" : null }
+2019-03-07 14:32:12.7008 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 12, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.7008 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 22, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.7008 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 22, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:12.7008 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 22, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.7008 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 22, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:12.7008 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 12, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:13.2309 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:13.2309 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 23, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:13.2309 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 23, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -12.432199478149414, "Y" : 0.010000000707805157, "Z" : 1.0770435333251953 }
+2019-03-07 14:32:13.2309 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 23, "Error" : 0, "Message" : null }
+2019-03-07 14:32:13.2309 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 23, "Error" : 0, "Message" : null }
+2019-03-07 14:32:13.2309 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 13, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:32:13.2309 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 24, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:13.2309 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 24, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:13.2309 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 24, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:13.2309 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 24, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:13.2309 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 13, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:13.8432 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 0, "ActorId" : NumberLong(0), "_id" : NumberLong(0), "X" : -3.8437221050262451, "Y" : 0.010000000707805157, "Z" : 11.691246032714844 }
+2019-03-07 14:32:13.8432 AllServer 0001 (Session.cs:269) { "_t" : "Frame_ClickMap", "RpcId" : 25, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -3.8437221050262451, "Y" : 0.010000000707805157, "Z" : 11.691246032714844 }
+2019-03-07 14:32:13.8432 AllServer 0001 (Session.cs:150) { "_t" : "Frame_ClickMap", "RpcId" : 25, "ActorId" : NumberLong("383182938112059"), "_id" : NumberLong(0), "X" : -3.8437221050262451, "Y" : 0.010000000707805157, "Z" : 11.691246032714844 }
+2019-03-07 14:32:13.8432 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 25, "Error" : 0, "Message" : null }
+2019-03-07 14:32:13.8432 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 25, "Error" : 0, "Message" : null }
+2019-03-07 14:32:13.8432 AllServer 0001 (UnitPathComponentSystem.cs:45) find result: (-12.4322, 0, 1.077043),(-3.843722, 0, 11.69125),
+2019-03-07 14:32:13.8432 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182937849908"), "_id" : NumberLong("383182938112058"), "X" : -12.432198524475098, "Y" : 0.0, "Z" : 1.0770432949066162, "Xs" : [-3.843721866607666], "Ys" : [0.0], "Zs" : [11.691245079040527] }
+2019-03-07 14:32:13.8432 AllServer 0001 (Session.cs:150) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong("383182937849908"), "_id" : NumberLong("383182938112058"), "X" : -12.432198524475098, "Y" : 0.0, "Z" : 1.0770432949066162, "Xs" : [-3.843721866607666], "Ys" : [0.0], "Zs" : [11.691245079040527] }
+2019-03-07 14:32:13.8432 AllServer 0001 (Session.cs:269) { "_t" : "M2C_PathfindingResult", "ActorId" : NumberLong(0), "_id" : NumberLong("383182938112058"), "X" : -12.432198524475098, "Y" : 0.0, "Z" : 1.0770432949066162, "Xs" : [-3.843721866607666], "Ys" : [0.0], "Zs" : [11.691245079040527] }
+2019-03-07 14:32:13.8432 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 14, "ActorId" : NumberLong(0), "Info" : "actor rpc request" }
+2019-03-07 14:32:13.8432 AllServer 0001 (Session.cs:269) { "_t" : "C2M_TestActorRequest", "RpcId" : 26, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:13.8523 AllServer 0001 (Session.cs:150) { "_t" : "C2M_TestActorRequest", "RpcId" : 26, "ActorId" : NumberLong("383182938112059"), "Info" : "actor rpc request" }
+2019-03-07 14:32:13.8523 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 26, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:13.8523 AllServer 0001 (Session.cs:150) { "_t" : "M2C_TestActorResponse", "RpcId" : 26, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:13.8523 AllServer 0001 (Session.cs:269) { "_t" : "M2C_TestActorResponse", "RpcId" : 14, "Error" : 0, "Message" : "", "Info" : "actor rpc response" }
+2019-03-07 14:32:15.5862 AllServer 0001 (Session.cs:269) { "_t" : "G2M_SessionDisconnect", "RpcId" : 27, "ActorId" : NumberLong("383182938112059") }
+2019-03-07 14:32:15.5862 AllServer 0001 (Session.cs:150) { "_t" : "G2M_SessionDisconnect", "RpcId" : 27, "ActorId" : NumberLong("383182938112059") }
+2019-03-07 14:32:15.5862 AllServer 0001 (Session.cs:269) { "_t" : "ActorResponse", "RpcId" : 27, "Error" : 0, "Message" : null }
+2019-03-07 14:32:15.5862 AllServer 0001 (Session.cs:150) { "_t" : "ActorResponse", "RpcId" : 27, "Error" : 0, "Message" : null }
