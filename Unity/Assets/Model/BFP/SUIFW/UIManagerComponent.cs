@@ -13,8 +13,8 @@
 using System;
 using System.Collections.Generic;
 using ETModel;
-using FairyGUI;
 using UnityEngine;
+ 
 
 namespace ETModel
 {
@@ -26,11 +26,12 @@ namespace ETModel
             self.Awake();
         }
     }
-    public class UIManagerComponent : Component {
+    public class UIManagerComponent : Component
+    {
 
         #region        字段 
         //实例引用
-        public  static   UIManagerComponent Instance;
+        public static UIManagerComponent Instance;
         //缓存所有UI窗体
         private Dictionary<Type, BaseUIForms> _DicAllUIForms;
         //缓存所有显示中的窗体
@@ -39,46 +40,49 @@ namespace ETModel
         private Stack<BaseUIForms> _StaCurrentUIForms;
 
 
+        //UI根节点对象
+        private GameObject _GoCanvasRoot = null;
+        //顶层面板
+        private GameObject _GoTopPlane;
+        //遮罩面板
+        private GameObject _GoMaskPlane;
+        //UI摄像机
+        private Camera _UICamear;
+        //原始UI摄像机的层深
+        private float _OriginalUICameraDepth;
+
         #endregion
 
         #region 公共方法
-	    /// <summary>
-	    /// 加载核心字段数据
-	    /// </summary>
-	    public void Awake()
-	    {
-            Log.Debug("开始初始化UI管理组件");
-	        Instance = this;
-	        _DicAllUIForms = new Dictionary<Type, BaseUIForms>();
-	        _DicCurrentShowUIForms = new Dictionary<Type, BaseUIForms>();
-	        _StaCurrentUIForms = new Stack<BaseUIForms>();
+        /// <summary>
+        /// 加载核心字段数据
+        /// </summary>
+        public void Awake()
+        {
+            Instance = this;
+            _DicAllUIForms = new Dictionary<Type, BaseUIForms>();
+            _DicCurrentShowUIForms = new Dictionary<Type, BaseUIForms>();
+            _StaCurrentUIForms = new Stack<BaseUIForms>();
 
-            //加载UI包
-            #if UNITY_EDITOR
-            	       UIPackage.AddPackage("UI/ASource");
-            UIPackage.AddPackage("UI/Common");
-#else
-            //获取AB包
-	        Game.Scene.GetComponent<ResourcesComponent>().LoadBundle("asource");
-            AssetBundle bundle = Game.Scene.GetComponent<ResourcesComponent>().bundles["asource"].AssetBundle;
-            //赋值给FairyGUi。
-            UIPackage.AddPackage(bundle);
+            #region Mask逻辑
+            //得到UI根节点、UI脚本节点                    
+            _GoCanvasRoot = GameObject.Find("UIRoot");
+            //得到“顶层面板”与“遮罩面板”
+            _GoTopPlane = _GoCanvasRoot;
+            _GoMaskPlane = _GoCanvasRoot.transform .Find("PopUp/UIMaskPanels").gameObject;
 
-             Game.Scene.GetComponent<ResourcesComponent>().LoadBundle("common");
-            AssetBundle bundleCommon = Game.Scene.GetComponent<ResourcesComponent>().bundles["common"].AssetBundle;
-            //赋值给FairyGUi。
-            UIPackage.AddPackage(bundleCommon);
-#endif
-       
-            UIConfig.defaultFont = "Microsoft YaHei";
-            GRoot.inst.SetContentScaleFactor(1136, 640, UIContentScaler.ScreenMatchMode.MatchWidthOrHeight);
-	        UIConfig.buttonSound = (NAudioClip)UIPackage.GetItemAssetByURL("ui://ASource/buttonclick");
-            UIConfig.modalLayerColor = new Color(186f, 85f, 211f, 0.4f);
-	        UIConfig.globalModalWaiting = "ui://jfcixih7lfw017";
-	        UIConfig.windowModalWaiting = "ui://Common/WindowModalWaiting";
-
+            //得到UI摄像机的原始“层深”
+            _UICamear = GameObject.Find("UICamera").GetComponent<Camera>();
+            if (_UICamear != null)
+            {
+                _OriginalUICameraDepth = _UICamear.depth;
+            }
+            else
+            {
+                Debug.Log(GetType() + "/Start()/_UICamera is Null ,please Check!");
+            }
+            #endregion
         }
-
 
 
         /// <summary>
@@ -130,7 +134,7 @@ namespace ETModel
         {
             //
             BaseUIForms baseUIForms;
-            _DicAllUIForms.TryGetValue(uiType, value: out baseUIForms);
+            _DicAllUIForms.TryGetValue(uiType, value: out   baseUIForms);
             if (baseUIForms == null) return;
 
             //根据不同显示类型做不同处理
@@ -150,38 +154,6 @@ namespace ETModel
         }
 
         #endregion
-
-        #region 调试方法。查看【uiManager】内部核心数据。
-
-        /// <summary>
-        /// 获取【全部UI窗体集合】数量
-        /// </summary>
-        /// <returns></returns>
-        public int GetDicAllUIFormsCount()
-        {
-            return _DicAllUIForms.Count;
-        }
-
-        /// <summary>
-        /// 获取【当前显示窗体集合】数量
-        /// </summary>
-        /// <returns></returns>
-        public int GetDicCurrentShowUIFormsCount()
-        {
-            return _DicCurrentShowUIForms.Count;
-        }
-
-        /// <summary>
-        /// 获取【栈集合】中的数量
-        /// </summary>
-        /// <returns></returns>
-        public int GetSatckCount()
-        {
-            return _StaCurrentUIForms.Count;
-        }
-
-        #endregion
-
         #region 私有方法
 
 
@@ -196,7 +168,7 @@ namespace ETModel
         {
             //检查是否已经存在显示中
             BaseUIForms baseUiForms;
-            _DicCurrentShowUIForms.TryGetValue(uiType, out baseUiForms);
+            _DicCurrentShowUIForms.TryGetValue(uiType, out  baseUiForms);
             if (baseUiForms != null)
             {
                 return;
@@ -314,7 +286,7 @@ namespace ETModel
                     BaseUIForms nextUIForm = _StaCurrentUIForms.Peek();
                     nextUIForm.ReDisplay();
                 }
-
+               
             }
             else if (_StaCurrentUIForms.Count == 1)
             {
@@ -360,11 +332,11 @@ namespace ETModel
                 while (this._StaCurrentUIForms.Count > 0)
                 {
                     BaseUIForms ui = this._StaCurrentUIForms.Pop();
-
-                    ui.Hiding();
+                     
+                        ui.Hiding();
                 }
-                _StaCurrentUIForms.Clear();
-
+            _StaCurrentUIForms.Clear();
+           
             }
             Log.Debug("-----------------------栈结构清理结束");
         }
@@ -408,8 +380,10 @@ namespace ETModel
         /// <returns></returns>
         private BaseUIForms CreateUiForms(Type uiType)
         {
+          object yy=  Activator.CreateInstance(uiType);
             //根据类型创建
-            BaseUIForms baseUIForms = Activator.CreateInstance(uiType) as BaseUIForms;
+            //BaseUIForms baseUIForms = Activator.CreateInstance(uiType) as BaseUIForms;
+            BaseUIForms baseUIForms = yy as BaseUIForms;
             if (baseUIForms == null)
             {
                 Log.Error("Error!BaseUIForms is null,please check the UIForm：" + uiType.Name);
@@ -429,7 +403,44 @@ namespace ETModel
 
         #endregion
 
+        #region mask逻辑
+        /// <summary>
+        /// 设置遮罩状态
+        /// </summary>
+        /// <param name="goDisplayPlane">需要显示的窗体</param>
+        public void SetMaskWindow(GameObject goDisplayPlane)
+        {
+            //顶层窗体下移。
+            _GoTopPlane.transform.SetAsLastSibling();
+            _GoMaskPlane.SetActive(true);
 
+            //遮罩窗体下移
+            _GoMaskPlane.transform.SetAsLastSibling();
+            //显示窗体下移
+            goDisplayPlane.transform.SetAsLastSibling();
+            //增加当前UI摄像机的“层深”
+            if (_UICamear != null)
+            {
+                _UICamear.depth = _UICamear.depth + 100;
+            }
+        }
+
+        /// <summary>
+        /// 取消遮罩窗体
+        /// </summary>
+        public void CancleMaskWindow()
+        {
+            //顶层窗体上移
+            _GoTopPlane.transform.SetAsFirstSibling();
+            //禁用遮罩窗体
+            if (_GoMaskPlane.activeInHierarchy)
+            {
+                _GoMaskPlane.SetActive(false);
+            }
+            //回复UI摄像机的原来的“层深”
+            _UICamear.depth = _OriginalUICameraDepth;
+        }
+        #endregion
 
         public override void Dispose()
         {
@@ -438,29 +449,15 @@ namespace ETModel
                 return;
             }
 
-
-            foreach (BaseUIForms ui in this._DicAllUIForms.Values)
-            {
-                if (ui != null)
-                {
-                    if (ui.GObject != null)
-                    {
-                        ui.GObject.Dispose();
-                    }
-
-                    if (ui.Window != null)
-                    {
-                        ui.Window.Dispose();
-                    }
-                }
-
-            }
+            
             Instance = null;
+            this._DicAllUIForms.Clear();
             this._DicCurrentShowUIForms.Clear();
             this._StaCurrentUIForms.Clear();
 
             base.Dispose();
         }
+
 
 
     }//end class

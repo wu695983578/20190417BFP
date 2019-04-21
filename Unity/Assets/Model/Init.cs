@@ -26,15 +26,15 @@ namespace ETModel
 				Game.Scene.AddComponent<ResourcesComponent>();
 				Game.Scene.AddComponent<PlayerComponent>();
 				Game.Scene.AddComponent<UnitComponent>();
-				
 
-				// 下载ab包
-				await BundleHelper.DownloadBundle();
+                Game.Scene.AddComponent<EventCenterComponent>();
+                // 下载ab包
+                await BundleHelper.DownloadBundle();
 
 				Game.Hotfix.LoadHotfixAssembly();
                 //新Ui
                // Log.Debug("加载UI框架");
-               // Game.Scene.AddComponent<UIManagerComponent>();
+                Game.Scene.AddComponent<UIManagerComponent>();
                 // 加载配置
                 Game.Scene.GetComponent<ResourcesComponent>().LoadBundle("config.unity3d");
 				Game.Scene.AddComponent<ConfigComponent>();
@@ -48,7 +48,8 @@ namespace ETModel
 
                 Game.Hotfix.GotoHotfix();
 
-				Game.EventSystem.Run(EventIdType.TestHotfixSubscribMonoEvent, "TestHotfixSubscribMonoEvent");
+               
+                Game.EventSystem.Run(EventIdType.TestHotfixSubscribMonoEvent, "TestHotfixSubscribMonoEvent");
 			}
 			catch (Exception e)
 			{

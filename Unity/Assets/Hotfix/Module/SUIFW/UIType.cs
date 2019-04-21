@@ -15,15 +15,17 @@ using UnityEngine;
 
 namespace ETHotfix
 {   
-
-	public class UIType  {
-        //是否需要清空【栈集合】
+    /// <summary>
+    /// UI（窗体）类型
+    /// </summary>
+    public  class UIType
+    {
+        //是否需要清空“反向切换”
         public bool NeedClearingStack = false;
-        //UI窗体（位置）类型。
+        //UI窗体类型
         public UIFormsType UIForms_Type = UIFormsType.Normal;
         //UI窗体显示类型
         public UIFormsShowMode UIForms_ShowMode = UIFormsShowMode.Normal;
     }
-
 }
 

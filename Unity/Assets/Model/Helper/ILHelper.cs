@@ -29,7 +29,9 @@ namespace ETModel
 			appdomain.DelegateManager.RegisterFunctionDelegate<Google.Protobuf.Adapt_IMessage.Adaptor>();
 			appdomain.DelegateManager.RegisterMethodDelegate<Google.Protobuf.Adapt_IMessage.Adaptor>();
 
-			CLRBindings.Initialize(appdomain);
+            //Action<string> 的参数为一个string
+            appdomain.DelegateManager.RegisterMethodDelegate<string>();
+            CLRBindings.Initialize(appdomain);
 
 			// 注册适配器
 			Assembly assembly = typeof(Init).Assembly;

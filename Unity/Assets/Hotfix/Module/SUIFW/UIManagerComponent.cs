@@ -13,7 +13,6 @@
 using System;
 using System.Collections.Generic;
 using ETModel;
-using FairyGUI;
 using UnityEngine;
  
 
@@ -41,6 +40,21 @@ namespace ETHotfix
         private Stack<BaseUIForms> _StaCurrentUIForms;
 
 
+        //UI根节点对象
+        private GameObject _GoCanvasRoot = null;
+        //顶层面板
+        private GameObject _GoTopPlane;
+        //遮罩面板
+        private GameObject _GoMaskPlane;
+        //UI摄像机
+        private Camera _UICamear;
+        //普通全屏界面节点
+        private Transform _CanTransformNormal = null;
+        //弹出模式节点
+        private Transform _CanTransformPopUp = null;
+        //原始UI摄像机的层深
+        private float _OriginalUICameraDepth;
+
         #endregion
 
         #region 公共方法
@@ -50,23 +64,32 @@ namespace ETHotfix
         public void Awake()
         {
             Instance = this;
+           
             _DicAllUIForms = new Dictionary<Type, BaseUIForms>();
             _DicCurrentShowUIForms = new Dictionary<Type, BaseUIForms>();
             _StaCurrentUIForms = new Stack<BaseUIForms>();
 
-            //加载UI包
-#if UNITY_EDITOR
-	        UIPackage.AddPackage("UI/ASource");
-#else
-            //加载AB包
-#endif
-            //Groot的参数初始化
+            #region Mask逻辑
+            //得到UI根节点、UI脚本节点                    
+            _GoCanvasRoot = GameObject.Find("UIRoot");
+            //得到“顶层面板”与“遮罩面板”
+            _GoTopPlane = _GoCanvasRoot;
+            _GoMaskPlane = _GoCanvasRoot.transform .Find("PopUp/UIMaskPanels").gameObject;
 
-
-            GRoot.inst.SetContentScaleFactor(1136, 640, UIContentScaler.ScreenMatchMode.MatchWidthOrHeight);
-            UIConfig.buttonSound = (NAudioClip)UIPackage.GetItemAssetByURL("ui://ASource/buttonclick");
-            UIConfig.modalLayerColor = new Color(186f, 85f, 211f, 0.4f);
-
+            //得到UI摄像机的原始“层深”
+            _UICamear = GameObject.Find("UICamera").GetComponent<Camera>();
+            //得到普通全屏界面节点、固定界面节点、弹出模式节点、UI脚本节点
+            _CanTransformNormal =_GoCanvasRoot.transform .Find("Normal");
+            _CanTransformPopUp = _GoCanvasRoot.transform .Find("PopUp");
+            if (_UICamear != null)
+            {
+                _OriginalUICameraDepth = _UICamear.depth;
+            }
+            else
+            {
+                Debug.Log(GetType() + "/Start()/_UICamera is Null ,please Check!");
+            }
+            #endregion
         }
 
 
@@ -80,6 +103,9 @@ namespace ETHotfix
         public BaseUIForms ShowUIForms(Type uiType)
         {
             //根据UI窗体名称,将预设加载到“所有窗体”的缓存集合中
+            Debug.Log("HotFix******************************************");
+            //初始化UI窗体
+          
             BaseUIForms baseUIForms = this.LoadUIFormFromAllUIFormsCatch(uiType);
             if (baseUIForms == null) return null;
 
@@ -88,8 +114,9 @@ namespace ETHotfix
             {
                 ClearingStack();
             }
-            //初始化UI窗体
-            baseUIForms.Awake();
+            if(!baseUIForms.GObj)
+            baseUIForms.Awake(baseUIForms);
+
             //根据UI窗体的显示模式，做不同的处理
             switch (baseUIForms.CurrentUIType.UIForms_ShowMode)
             {
@@ -105,7 +132,18 @@ namespace ETHotfix
                     EnterUIFormsAndHideOther(uiType);
                     break;
             }
-
+            //根据弹窗类型，放在对应的父对象下边
+            switch (baseUIForms.CurrentUIType.UIForms_Type)
+            {
+                case UIFormsType.Normal:
+                    baseUIForms.GObj.transform.SetParent(_CanTransformNormal, false);
+                    break;
+                case UIFormsType.PopUp:
+                    baseUIForms.GObj.transform.SetParent(_CanTransformPopUp, false);
+                    break;
+                default:
+                    break;
+            }
             return baseUIForms;
 
         }
@@ -139,38 +177,6 @@ namespace ETHotfix
         }
 
         #endregion
-
-        #region 调试方法。查看【uiManager】内部核心数据。
-
-        /// <summary>
-        /// 获取【全部UI窗体集合】数量
-        /// </summary>
-        /// <returns></returns>
-        public int GetDicAllUIFormsCount()
-        {
-            return _DicAllUIForms.Count;
-        }
-
-        /// <summary>
-        /// 获取【当前显示窗体集合】数量
-        /// </summary>
-        /// <returns></returns>
-        public int GetDicCurrentShowUIFormsCount()
-        {
-            return _DicCurrentShowUIForms.Count;
-        }
-
-        /// <summary>
-        /// 获取【栈集合】中的数量
-        /// </summary>
-        /// <returns></returns>
-        public int GetSatckCount()
-        {
-            return _StaCurrentUIForms.Count;
-        }
-
-        #endregion
-
         #region 私有方法
 
 
@@ -404,6 +410,7 @@ namespace ETHotfix
                 Log.Error("Error!BaseUIForms is null,please check the UIForm：" + uiType.Name);
                 return null;
             }
+          
             //加载到“所有UI窗体集合”
             this._DicAllUIForms.Add(uiType, baseUIForms);
 
@@ -418,7 +425,44 @@ namespace ETHotfix
 
         #endregion
 
+        #region mask逻辑
+        /// <summary>
+        /// 设置遮罩状态
+        /// </summary>
+        /// <param name="goDisplayPlane">需要显示的窗体</param>
+        public void SetMaskWindow(GameObject goDisplayPlane)
+        {
+            //顶层窗体下移。
+            _GoTopPlane.transform.SetAsLastSibling();
+            _GoMaskPlane.SetActive(true);
 
+            //遮罩窗体下移
+            _GoMaskPlane.transform.SetAsLastSibling();
+            //显示窗体下移
+            goDisplayPlane.transform.SetAsLastSibling();
+            //增加当前UI摄像机的“层深”
+            if (_UICamear != null)
+            {
+                _UICamear.depth = _UICamear.depth + 100;
+            }
+        }
+
+        /// <summary>
+        /// 取消遮罩窗体
+        /// </summary>
+        public void CancleMaskWindow()
+        {
+            //顶层窗体上移
+            _GoTopPlane.transform.SetAsFirstSibling();
+            //禁用遮罩窗体
+            if (_GoMaskPlane.activeInHierarchy)
+            {
+                _GoMaskPlane.SetActive(false);
+            }
+            //回复UI摄像机的原来的“层深”
+            _UICamear.depth = _OriginalUICameraDepth;
+        }
+        #endregion
 
         public override void Dispose()
         {
@@ -427,26 +471,9 @@ namespace ETHotfix
                 return;
             }
 
-
-            foreach (BaseUIForms ui in this._DicAllUIForms.Values)
-            {
-                if (ui != null)
-                {
-                    if (ui.GObject != null)
-                    {
-                        ui.GObject.Dispose();
-                    }
-
-                    if (ui.Window != null)
-                    {
-                        ui.Window.Dispose();
-                    }
-
-                    ui.HideEvent();
-                }
-
-            }
+            
             Instance = null;
+            this._DicAllUIForms.Clear();
             this._DicCurrentShowUIForms.Clear();
             this._StaCurrentUIForms.Clear();
 

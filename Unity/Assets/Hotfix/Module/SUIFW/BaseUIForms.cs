@@ -17,14 +17,13 @@
  */
 
 using System.Threading.Tasks;
-using FairyGUI;
 using ETModel;
 using UnityEngine;
 
 namespace ETHotfix
 {
 
-    public class BaseUIForms
+    public  class BaseUIForms
     {
 
         #region 属性
@@ -45,83 +44,39 @@ namespace ETHotfix
                 _CurrentUIType = value;
             }
         }
-
-        public string pakName;
-        public string cmpName;
-
-        /*对应的FairyGUi的ui组件 */
-        public GObject GObject;
-
-        /*Fairygui的窗口。如果是弹出窗体，使用Window展示。否则使用GRoot展示。*/
-        public ExWindow Window;
-
+        public GameObject gameObject
+        {
+            get
+            {
+                return GObj;
+            }
+            
+        }
+        public GameObject GObj;
+        public string abName;
+        public BaseUIForms thisForms;
         #endregion
 
         #region 脚本生命周期
 
-        public void Awake()
+        public void Awake(BaseUIForms forms)
         {
-            if (string.IsNullOrEmpty(this.pakName) || string.IsNullOrEmpty(this.cmpName))
+            if (string.IsNullOrEmpty(abName))
             {
-                Log.Error(this.GetType() + "/Awake() 初始化Ui界面失败，pakName或cmpName为空！");
+                Log.Error(this.GetType() + "/Awake() 初始化Ui界面失败，Gobj为空！");
                 return;
             }
-#if UNITY_EDITOR
-            UIPackage.AddPackage("UI/" + pakName);
-#else
-            if (UIPackage.GetByName(pakName) == null)
-            {
-                string bundleName = this.pakName.ToLower();
-
-                ETModel.Game.Scene.GetComponent<ResourcesComponent>().LoadOneBundle(bundleName);
-                AssetBundle bundle = ETModel.Game.Scene.GetComponent<ResourcesComponent>().bundles[bundleName].AssetBundle;
-                //赋值给FairyGUi。
-                UIPackage.AddPackage(bundle);
-            }
-#endif
-
-            this.GObject = UIPackage.CreateObject(pakName, cmpName);
-            if (this.GObject == null)
-            {
-                Log.Error(this.GetType() + "/Awake() 获取不到FairyGui对象！确认项目配置正确后，请检查包名：" + this.pakName + "，组件名:" + this.cmpName);
-                UI.Tip(this.GetType() + "/Awake() 获取不到FairyGui对象！确认项目配置正确后，请检查包名：" + this.pakName + "，组件名:" + this.cmpName);
-                return;
-            }
-
+            this.thisForms= forms;
+            //string bundleName = this.abName.ToLower();
+            string bundleName = abName;
+            ResourcesComponent resourcesComponent = ETModel.Game.Scene.GetComponent<ResourcesComponent>();
+            resourcesComponent.LoadBundle($"{bundleName }.unity3d");
+            GameObject bundleGameObject = (GameObject)resourcesComponent.GetAsset($"{bundleName}.unity3d", $"{bundleName}");
+            GObj = UnityEngine.Object.Instantiate(bundleGameObject);
+           // forms.gameObject = GObj;
             InitUI();
-
-            //弹出窗体
-            if (_CurrentUIType.UIForms_Type == UIFormsType.Window)
-            {
-                this.Window = new ExWindow();
-                this.Window.contentPane = this.GObject.asCom;
-                this.Window.doShowAnimationEvent += DoShowAnimationEvent;
-                this.Window.doHideAnimationEvent += DoHideAnimationEvent;
-                this.Window.onHideEvent += OnHideEvent;
-            }
-
         }
-
-        /// <summary>
-        /// 关闭当前UI窗体
-        /// </summary>
-        protected void Close()
-        {
-            if (_CurrentUIType.UIForms_Type == UIFormsType.Window)
-            {
-                if (this.Window != null)
-                    this.Window.Hide();
-            }
-            else
-            {
-                UIManagerComponent.Instance.CloseUIForms(this.GetType());
-            }
-        }
-
         #region 子类重写方法
-
-
-
         /// <summary>
         /// UI初始化方法。_必须
         /// </summary>
@@ -129,61 +84,7 @@ namespace ETHotfix
         {
 
         }
-
-        /// <summary>
-        /// 重写窗口关闭时的逻辑。_窗口 弹出窗体。
-        /// </summary>
-        /// <returns></returns>
-        public virtual Task HideEvent()
-        {
-            return Task.CompletedTask;
-        }
-
-
-        /// <summary>
-        /// 重写打开窗口时动画的展示方法 
-        /// </summary>
-        public virtual void DoShowAnimationEvent()
-        {
-
-        }
-
-        /// <summary>
-        /// 重写关闭窗口的动画展示方法。
-        /// </summary>
-        /// <returns></returns>
-        public virtual Task HideAnimationEvent()
-        {
-            return Task.CompletedTask;
-        }
-
-
-
-        /// <summary>
-        /// 窗口关闭动画
-        /// </summary>
-        private async void DoHideAnimationEvent()
-        {
-            await HideAnimationEvent();
-            if (this.Window != null)
-                this.Window.HideImmediately();
-        }
-
-        /// <summary>
-        /// 关闭窗体事件
-        /// </summary>
-        private async void OnHideEvent()
-        {
-            Log.Debug("---OnHideEvent执行了:" + this.GetType());
-            await HideEvent();
-            //window窗体使用fairyGui的方式关闭必须要通过框架再关一次
-            if (this.CurrentUIType.UIForms_Type == UIFormsType.Window)
-            {
-                UIManagerComponent.Instance.CloseUIForms(this.GetType());
-            }
-        }
-
-
+       
         #endregion
 
 
@@ -196,17 +97,13 @@ namespace ETHotfix
         /// </summary>
         public virtual void Display()
         {
+            GObj.SetActive(true);
             Log.Debug("执行了Display(),打开了：" + this.GetType());
             //弹出窗体
-            if (_CurrentUIType.UIForms_Type == UIFormsType.Window)
+            if (_CurrentUIType.UIForms_Type == UIFormsType.PopUp)
             {
-                this.Window.Show();
-            }
-            else
-            {
-                GRoot.inst.AddChild(this.GObject);
-
-                this.DoShowAnimationEvent();
+                //添加UI遮罩处理
+                UIManagerComponent.Instance.SetMaskWindow(GObj);
             }
         }
 
@@ -215,23 +112,12 @@ namespace ETHotfix
         /// </summary>
         public virtual void Hiding()
         {
+            GObj.SetActive(false);
             //弹出窗体
-            if (_CurrentUIType.UIForms_Type == UIFormsType.Window)
+            if (_CurrentUIType.UIForms_Type == UIFormsType.PopUp)
             {
-                Log.Debug("关闭了Window:" + this.GetType());
-                if (this.GObject != null)
-                    this.GObject.Dispose();
-                if (this.Window != null)
-                    this.Window.Dispose();
-                this.OnHideEvent();
+                UIManagerComponent.Instance.CancleMaskWindow();
             }
-            else if (this.GObject.parent != null)
-            {
-                this.OnHideEvent();
-                this.DoHideAnimationEvent();
-                this.GObject.Dispose();
-            }
-
         }
 
         /// <summary>
@@ -239,19 +125,12 @@ namespace ETHotfix
         /// </summary>
         public virtual void ReDisplay()
         {
-
+            GObj.SetActive(true);
             //弹出窗体
-            if (_CurrentUIType.UIForms_Type == UIFormsType.Window && this.Window.parent != null)
+            if (_CurrentUIType.UIForms_Type == UIFormsType.PopUp)
             {
-                Log.Debug("执行了Redisplay,打开了Window：" + this.GetType());
-                this.Window.visible = true;
+                UIManagerComponent.Instance.SetMaskWindow(GObj);
             }
-            else
-            {
-                Log.Debug("执行了redisplay非window窗体:" + this.GetType());
-                this.GObject.visible = true;
-            }
-
         }
 
         /// <summary>
@@ -259,26 +138,11 @@ namespace ETHotfix
         /// </summary>
         public virtual void Freeze()
         {
-
-            //弹出窗体
-            if (_CurrentUIType.UIForms_Type == UIFormsType.Window && this.Window.parent != null)
-            {
-                Log.Debug("执行了Freeze(),冻结了：" + this.GetType());
-                this.Window.visible = false;
-            }
-            else
-            {
-                Log.Debug("执行了Freeze(),冻结了非window窗体：" + this.GetType());
-                this.GObject.visible = false;
-            }
+            GObj.SetActive(true);
         }
 
         #endregion
-
-
-
-
-    }//classend
+    }
 
 }
 

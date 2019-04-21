@@ -16,40 +16,28 @@ using UnityEngine;
 
 namespace ETModel
 {
-    #region  系统枚举类
+    #region 系统枚举
+    /// <summary>
+    /// UI窗体类型
+    /// </summary>
+    public enum UIFormsType
+    {
+        Normal,             // 普通全屏界面(例如主城UI界面)
+        PopUp,              // 弹出模式(小窗口)窗口 (例如：商场、背包、确认窗口等)
+    }
 
-        /// <summary>
-        /// UI窗体（位置）类型。
-        /// </summary>
-            public enum UIFormsType
-        {
-            //普通窗体
-            Normal,
-            //固定窗体
-            Fixed,
-            //弹出窗体
-            Window
-        }
-
-        /// <summary>
-        /// UI窗体显示类型
-        /// </summary>
-            public enum UIFormsShowMode
-        {
-            //普通
-            Normal,
-            //反向切换
-            ReverseChange,
-            //隐藏其他
-            HideOther
-        }
-
-
-
-
+    /// <summary>
+    /// UI窗体显示类型
+    /// </summary>
+    public enum UIFormsShowMode
+    {
+        Normal,             //普通显示
+        ReverseChange,      //反向切换      
+        HideOther,          //隐藏其他界面 
+    }
 
     #endregion
- 
+
 
 }
 

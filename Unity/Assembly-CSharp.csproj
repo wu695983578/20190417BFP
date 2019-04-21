@@ -60,12 +60,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BT\customizedtypes.cs" />
+    <Compile Include="Assets\MyTest.cs" />
+    <Compile Include="Assets\NewBehaviourScript.cs" />
     <None Include="Assets\Progress.txt" />
     <None Include="Assets\Res\Config\GlobalProto.txt" />
     <None Include="Assets\link.xml" />
     <None Include="Assets\Res\Config\BuffConfig.txt" />
     <None Include="Assets\Res\Config\UnitConfig.txt" />
+    <None Include="Assets\Res\Config\ConnectionManager.xml" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/UnityProgect/ET20190307/ET-master/Unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

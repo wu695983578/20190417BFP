@@ -2,10 +2,7 @@ D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Unity.ThirdParty.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Unity.ThirdParty.pdb
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Boo.Lang.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\DOTween.dll
-D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\FairyGUI.dll
-D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\FairyGUI.Editor.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Microsoft.CSharp.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Microsoft.Win32.Primitives.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\mscorlib.dll
@@ -297,8 +294,6 @@ D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEngine.GoogleAudi
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEditor.SpatialTracking.xml
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEditor.VR.xml
-D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\FairyGUI.pdb
-D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\FairyGUI.Editor.pdb
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEngine.VRModule.xml
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEngine.UnityAnalyticsModule.xml
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEngine.XRModule.xml

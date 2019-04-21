@@ -1,0 +1,7 @@
+Win64
+PlayerPath?
+D:/UnityProgect/ET20190307/ET-master/Unity/../Release/PC/StreamingAssets/map.unity3d
+SceneListBegin?
+Assets/Scenes/Map.unity
+SceneListEnd?
+688c1c690a34ec4adef16203bc7f8539 Unity.Model.dll:ETModel.GizmosDebug

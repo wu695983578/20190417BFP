@@ -2,10 +2,7 @@ D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Unity.Hotfix.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Unity.Hotfix.pdb
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Boo.Lang.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\DOTween.dll
-D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\FairyGUI.dll
-D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\FairyGUI.Editor.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Microsoft.CSharp.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Microsoft.Win32.Primitives.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\mscorlib.dll
@@ -226,7 +223,6 @@ D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Boo.Lang.Useful.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Unity.CecilTools.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Unity.Cecil.Pdb.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Unity.Cecil.Mdb.dll
-D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Unity.Model.pdb
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEngine.xml
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEditor.xml
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEngine.AIModule.xml
@@ -303,11 +299,10 @@ D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEngine.GoogleAudi
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEditor.SpatialTracking.xml
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEditor.VR.xml
-D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\FairyGUI.pdb
-D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\FairyGUI.Editor.pdb
 D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
 D:\UnityProgect\ET20190307\ET-master\Unity\obj\Debug\Unity.Hotfix.csprojAssemblyReference.cache
 D:\UnityProgect\ET20190307\ET-master\Unity\obj\Debug\Unity.Hotfix.csproj.CoreCompileInputs.cache
 D:\UnityProgect\ET20190307\ET-master\Unity\obj\Debug\Unity.Hotfix.csproj.CopyComplete
 D:\UnityProgect\ET20190307\ET-master\Unity\obj\Debug\Unity.Hotfix.dll
 D:\UnityProgect\ET20190307\ET-master\Unity\obj\Debug\Unity.Hotfix.pdb
+D:\UnityProgect\ET20190307\ET-master\Unity\Temp\bin\Debug\Unity.Model.pdb
