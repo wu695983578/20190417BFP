@@ -6,7 +6,7 @@ namespace ETHotfix
     public class EventCenterComponent : Component
     {
         //测试
-        public readonly Events Test = new Events(); //发送测试事件
+        public readonly Events<string> Test = new Events<string>(); //发送测试事件
     }
 }
 

@@ -20,7 +20,7 @@ namespace ETHotfix
         public override void InitUI()
         {
             EventCenterComponent testEvent = Game.Scene.GetComponent<EventCenterComponent>();
-            testEvent.Test.Broadcast();
+            testEvent.Test.Broadcast("258");
             Button bt = GObj.transform.Find("EnterButton").GetComponent<Button>();
             bt.onClick.Add(() => {
                 Debug.Log("HotFix的Button按钮事件触发");

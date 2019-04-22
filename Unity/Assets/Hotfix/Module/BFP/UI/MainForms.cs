@@ -21,10 +21,10 @@ namespace ETHotfix
             EventCenterComponent testEvent = Game.Scene.GetComponent<EventCenterComponent>();
             //Debug.Log(testEvent+"KKKKKKKKKKKKKKKKKK");
             // var main= thisForms as MainForms;
-            testEvent.Test.AddListener(() =>
+            testEvent.Test.AddListener(data =>
             {
                  Text bt22 = GObj.transform.Find("EnterButton/Text").GetComponent<Text>();
-                 bt22.text = "2222222222";
+                 bt22.text = data.ToString();
             });
             Button bt = GObj.transform.Find("EnterButton").GetComponent<Button>();
             bt.onClick.Add(() =>
